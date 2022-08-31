@@ -1,5 +1,7 @@
 # loading packages
 library(dartR)
+# installing the developing version of dartR
+gl.install.vanilla.dartR(flavour = "dev")
 library(stringr)
 library(ape)
 library(data.table)
