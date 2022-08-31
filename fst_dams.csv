@@ -1,0 +1,9 @@
+﻿Dam,River,Height,Year,FST,MI,Dest,generations,study_year,gen_barrier
+Darthmouth,MittaMitta,180,1979,0.024,0.013,0.004,7.9,2018,4.8
+Jindabyne,ThredboSnowy,72,1967,0.024,0.005,0.003,7.9,2017,6.3
+Jindabyne2,EucumbenebelowSnowy,72,1967,0.045,0.007,0.006,7.9,2017,6.5
+JindabyneEucumbene,EucumbeneaboveSnowy,116,1958,0.042,0.005,0.006,7.9,2017,7.6
+Eucumbene,EucumbeneaboveThredbo,116,1958,0.04,0.011,0.006,7.9,2017,7.6
+Pindari,Severn,85,1969,0.007,0.006,0.001,7.9,2016,6.2
+Eucumbene2,Eucumbene,116,1958,0.053,0.011,0.008,7.9,2017,7.6
+Nepean,Nepean,82,1935,0.073,0.187,0.133,7.9,2009,9.4
