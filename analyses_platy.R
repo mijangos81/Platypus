@@ -1,3 +1,23 @@
+################################################################################
+################################################################################
+# Fragmentation by major dams and implications for the future viability of 
+# platypus populations
+# Jose L. Mijangos1,2, Gilad Bino3, Tahneal Hawke3, Stephen H. Kolomyjec4, 
+# Richard T. Kingsford3, Harvinder Sidhu1, Tom Grant3, Jenna Day5,
+# Kimberly N. Dias5, Jaime Gongora5 and William B. Sherwin6.
+# 1 School of Science, UNSW, Canberra, Australia.
+# 2 Centre for Conservation Ecology and Genomics, Institute for Applied Ecology,
+# University of Canberra, Canberra, Australia.
+# 3 Centre for Ecosystem Science, School of Biological, Earth and Environmental 
+# Sciences, UNSW, Sydney, Australia.
+# 4 College of Science and the Environment, Lake Superior State University, 
+# Sault Sainte Marie, USA.
+# 5 Sydney School of Veterinary Science, Faculty of Science, The University of
+# Sydney, Sydney, Australia.
+# 6 Evolution & Ecology Research Centre, UNSW, Sydney, Australia.
+# Corresponding author: Jose L. Mijangos. E-mail: luis.mijangos@gmail.com
+################################################################################
+################################################################################
 # loading packages
 library(dartR)
 # installing the developing version of dartR
@@ -120,7 +140,11 @@ gl.ld.distance(res)
 platy_between <-
   gl.filter.ld(platy_between, ld_report = res , threshold = 0.2)
 # Remove sites located within coding regions
-gff <- read.gff("ref_mOrnAna1.p.v1_top_level.gff3")
+# downloading the General Feature Format file from NCBI
+system(paste("wget ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Ornithorhynchus_anatinus/all_assembly_versions/GCF_004115215.1_mOrnAna1.p.v1/GCF_004115215.1_mOrnAna1.p.v1_genomic.gff.gz -P",getwd()))
+# reading GFF file 
+gff <- read.gff("GCF_004115215.1_mOrnAna1.p.v1_genomic.gff.gz")
+
 genes <- gff[gff$type == "gene", ]
 
 genes_by_chr <- split(genes, genes$seqid)
@@ -141,7 +165,7 @@ for (i in 1:length(loci_by_chr)) {
   vec_loci_no_genes <- c(vec_loci_no_genes, loci_no_genes$loc_name)
 }
 
-platy_between <-
+platy_between_2 <-
   gl.keep.loc(platy_between, loc.list = vec_loci_no_genes)
 
 # Dataset used to analyse variation within groups
@@ -180,7 +204,6 @@ Ar_micro <-
 
 # testing normality
 het_groups_micro <- as.data.frame(stats_micro$Hs)
-plot(density(het_groups_micro$above))
 shapiro.test(het_groups_micro$above)
 shapiro.test(het_groups_micro$below)
 shapiro.test(het_groups_micro$unreg)
