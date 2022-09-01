@@ -1,12 +1,20 @@
 # Platypus
 Fragmentation by major dams and implications for the future viability of platypus populations
+
 Jose L. Mijangos1,2, Gilad Bino3, Tahneal Hawke3, Stephen H. Kolomyjec4, Richard T. Kingsford3, Harvinder Sidhu1, Tom Grant3, Jenna Day5, Kimberly N. Dias5, Jaime Gongora5 and William B. Sherwin6.
+
 1 School of Science, UNSW, Canberra, Australia.
+
 2 Centre for Conservation Ecology and Genomics, Institute for Applied Ecology, University of Canberra, Canberra, Australia.
+
 3 Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, UNSW, Sydney, Australia.
+
 4 College of Science and the Environment, Lake Superior State University, Sault Sainte Marie, USA.
+
 5 Sydney School of Veterinary Science, Faculty of Science, The University of Sydney, Sydney, Australia.
+
 6 Evolution & Ecology Research Centre, UNSW, Sydney, Australia.
+
 Corresponding author: Jose L. Mijangos. E-mail: luis.mijangos@gmail.com
 
 Datasets and R scripts for "Fragmentation by major dams and implications for the future viability of platypus populations"
