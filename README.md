@@ -1,5 +1,5 @@
 # Platypus
-Fragmentation by major dams and implications for the future viability of platypus populations
+# Fragmentation by major dams and implications for the future viability of platypus populations
 
 Jose L. Mijangos1,2, Gilad Bino3, Tahneal Hawke3, Stephen H. Kolomyjec4, Richard T. Kingsford3, Harvinder Sidhu1, Tom Grant3, Jenna Day5, Kimberly N. Dias5, Jaime Gongora5 and William B. Sherwin6.
 
@@ -18,6 +18,7 @@ Jose L. Mijangos1,2, Gilad Bino3, Tahneal Hawke3, Stephen H. Kolomyjec4, Richard
 Corresponding author: Jose L. Mijangos. E-mail: luis.mijangos@gmail.com
 
 Datasets and R scripts for "Fragmentation by major dams and implications for the future viability of platypus populations"
+
 The below files contain all the information to replicate the analyses of the platypus manuscript. 
 
 - below_unreg.gen - Genepop format file containing the genotypes of the platypuses from Nepean River below the dam and the unregulated Wingecarribee River. 
